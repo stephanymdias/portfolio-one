@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(rgb(31, 37, 68), rgb(54, 6, 94), rgb(71, 79, 122), rgb(129, 104, 157), rgb(255, 208, 236));
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: #FFD0EC;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao__imagem{
+    width: 50%;
+}
+
+strong {
+    color: #FFD0EC;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.perfil__social{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfil__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.perfil__links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    width:50%;
+    border: 2px solid;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.perfil__links:hover{
+    background-color: #474F7A;
+}
+
+.rodape{
+    color: whitesmoke;
+    background-color: #474F7A;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
